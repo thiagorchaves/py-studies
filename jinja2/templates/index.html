@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Título da página {% endblock %}
+{% block content %}
+
+{% if title %}
+<h2>{{ title }}</h2>
+{% else %}
+<h2>Nomes</h2>
+{% endif %}
+    <ul>
+        {% for nome in nomes %}
+        <li>{{ nome }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

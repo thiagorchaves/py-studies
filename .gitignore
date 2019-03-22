@@ -4,3 +4,5 @@ __pycache__
 .DS_Store
 pymongo/venv-pymongo
 .idea
+jinja2/venv-jinja2
+dash/venv-dash
