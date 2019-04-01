@@ -8,3 +8,4 @@ jinja2/venv-jinja2
 dash/venv-dash
 docker/venv-docker
 docker-dash/venv-dash_docker
+jenkins/venv-jenkins
