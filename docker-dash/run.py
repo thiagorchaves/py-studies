@@ -3,10 +3,12 @@
 from flask import Flask, render_template
 from R_jenkins.blueprint import jenkins_routes
 from R_docker.blueprint import docker_routes
+from R_gitlab.blueprint import gitlab_routes
 
 app = Flask(__name__)
 app.register_blueprint(jenkins_routes)
 app.register_blueprint(docker_routes)
+app.register_blueprint(gitlab_routes)
 
 @app.route("/")
 def index():
