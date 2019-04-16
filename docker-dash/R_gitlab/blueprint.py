@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, session, url_for, redirect
 import requests
 
 gitlab_routes = Blueprint("gitlab", __name__, url_prefix="/gitlab")
@@ -6,6 +6,8 @@ token = "7UnkBFxhU-KW1CrxMQNR"
 
 @gitlab_routes.route("")
 def index():
+    if not "logged" in session or not session["logged"]:
+        return redirect(url_for('index'))
     try:
         usuarios = requests.get("https://gitlab.com/api/v4/users?private_token=%s"%(token))
         usuarios = usuarios.json()

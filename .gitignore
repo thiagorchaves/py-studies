@@ -9,3 +9,4 @@ dash/venv-dash
 docker/venv-docker
 docker-dash/venv-dash_docker
 jenkins/venv-jenkins
+ldap/venv-ldap
