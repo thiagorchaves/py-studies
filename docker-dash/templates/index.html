@@ -2,6 +2,7 @@
 {% block title %}Login{% endblock title %}
 {% block content %}
 <div class="container">
+        {% block alert %}{{ super() }}{% endblock %}
 <div class="row">
 <div class="col-sm-12 col-md-6 col-md-offset-3">
 <div class="panel panel-primary">

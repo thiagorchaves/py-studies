@@ -2,6 +2,7 @@
 {% block title %}Jenkins{% endblock title %}
 {% block content %}
 <div class="container">
+        {% block alert %}{{ super() }}{% endblock %}
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h1 class="panel-title clearfix">Jenkins</h1>
