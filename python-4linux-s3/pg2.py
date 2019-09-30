@@ -8,11 +8,13 @@ except Exception as e:
     print("Erro: {}".format(e))
     exit()
 
-cur.execute("insert into usuarios (nome, idade) values ('Izabel', 59);")
-con.commit()
+# cur.execute("insert into usuarios (nome, idade) values ('Izabel', 59);")
+# con.commit()
 
 cur.execute("select * from usuarios")
-con.commit()
+# print(cur.fetchone())
+print(cur.fetchall())
+
 
 cur.close()
 con.close()
