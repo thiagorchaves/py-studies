@@ -12,3 +12,6 @@ jenkins/venv-jenkins
 ldap/venv-ldap
 **.log
 **.txt
+bin
+include
+lib
