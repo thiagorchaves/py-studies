@@ -13,3 +13,6 @@ ldap/venv-ldap
 **.log
 delete_volumes/ec2
 delete-unused-ebs-volumes/delete_ebs
+.env
+delete_volumes/.env
+delete-unused-ebs-volumes/.env
