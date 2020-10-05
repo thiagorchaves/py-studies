@@ -3,7 +3,7 @@
 __pycache__
 .DS_Store
 pymongo/venv-pymongo
-.idea
+.idea/
 jinja2/venv-jinja2
 dash/venv-dash
 docker/venv-docker
@@ -11,3 +11,5 @@ docker-dash/venv-dash_docker
 jenkins/venv-jenkins
 ldap/venv-ldap
 **.log
+delete_volumes/ec2
+delete-unused-ebs-volumes/delete_ebs
